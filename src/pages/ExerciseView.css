@@ -1,0 +1,40 @@
+.exercise-view {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.25rem 2.5rem;
+  background: radial-gradient(circle at top right, #dbeafe 0%, #fefce8 55%, #f0fdf4 100%);
+}
+
+.exercise-view__header {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto 1.25rem;
+}
+
+.exercise-view__exit-btn {
+  padding: 0.55rem 1.15rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.exercise-view__exit-btn:hover {
+  background: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.exercise-view__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

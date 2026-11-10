@@ -1,0 +1,131 @@
+.student-dashboard {
+  min-height: 100vh;
+  padding: 2rem 1.25rem 3rem;
+  background: radial-gradient(circle at top left, #fef9c3 0%, #eff6ff 48%, #f5f3ff 100%);
+  color: #1e293b;
+}
+
+.student-dashboard__container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.student-dashboard__topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.student-dashboard__greeting {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.student-dashboard__intro {
+  margin: 0.35rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.student-dashboard__logout {
+  padding: 0.65rem 1.2rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.student-dashboard__logout:hover {
+  background: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.student-scoreboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 3px solid #fde047;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  box-shadow: 0 8px 0 #f59e0b, 0 14px 28px rgba(245, 158, 11, 0.18);
+}
+
+.student-scoreboard__stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.student-scoreboard__emoji {
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 16px;
+  background: #fef08a;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.student-scoreboard__label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+}
+
+.student-scoreboard__value {
+  display: block;
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.student-dashboard__section-title {
+  margin: 0 0 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.student-subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.student-dashboard__status {
+  padding: 2rem;
+  border-radius: 24px;
+  background: #ffffff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #475569;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.student-dashboard__status--error {
+  border: 2px solid #fca5a5;
+  background: #fef2f2;
+  color: #b91c1c;
+}
